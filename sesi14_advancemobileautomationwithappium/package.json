@@ -1,0 +1,28 @@
+{
+  "name": "appium-wdio-esm-demo",
+  "version": "1.0.0",
+  "description": "Example Appium project with WDIO using ESM",
+  "type": "module",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--no-warnings wdio run wdio.conf.js",
+    "test-plain": "wdio run wdio.conf.js",
+    "allure:generate": "allure generate allure-results -o allure-report --clean",
+    "allure:open": "allure open allure-report"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.0.0",
+    "@wdio/cli": "^9.0.0",
+    "@wdio/local-runner": "^9.0.0",
+    "@wdio/mocha-framework": "^9.0.0",
+    "@wdio/spec-reporter": "^9.0.0",
+    "allure-commandline": "^2.30.0",
+    "chai": "^5.1.1",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "webdriverio": "^9.0.0"
+  }
+}
